@@ -19,7 +19,7 @@ exports.up = function(knex) {
         .notNullable()
 
         // Milage
-        tbl.intiger('Milage')
+        tbl.integer('Milage')
         .notNullable()
 
         // Transmission
