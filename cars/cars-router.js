@@ -1,5 +1,5 @@
 const express = require('express');
-const cars = require('./cars-model')
+const cars = require('./cars-model');
 
 const router = express.Router();
 
@@ -45,3 +45,5 @@ router.post('/',(res, req) => {
         })
     })
 })
+
+module.exports = router;

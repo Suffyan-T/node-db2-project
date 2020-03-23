@@ -1,4 +1,4 @@
-const express= require('express');
+const express = require('express');
 
 const carsRouter = require('./cars/cars-router');
 
@@ -11,4 +11,4 @@ server.get('/', (req,res) => {
     res.send(`<h1>Cars Router</h1>`);
 });
 
-module.exports =server;
+module.exports = server;

@@ -1,4 +1,4 @@
-const knex = require('../data/db-config')
+const db = require('../data/db-config')
 
 module.eports ={
     getCars,
@@ -7,10 +7,10 @@ module.eports ={
 
 // GET 
 function getCars(){
-    return knex('cars')
+    return db.select('*').from('cars')
 }
 
 // POST
 function addCars(car){
-    return knex('cars').insert(car)
+    return db('cars').insert(car)
 }
